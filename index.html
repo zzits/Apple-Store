@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Apple Store</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@400;700;800&family=Poetsen+One&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <a class="logo" href="#">Apple Store</a>
+                <label id="cart" for="cart-radio"><img src="images/cart.svg" alt="Кошик" title="Кошик" width="35"></label>
+                <input type="checkbox" id="cart-radio">
+                
+                
+                <div class="full-screen">
+                    <label class="full-screen-label" for="cart-radio"></label>
+                    <div id="cart-menu">
+                        <h2>Ваші замовлення:</h2>
+                        <div id="ordered-products">
+
+                        </div>
+                        <a id="take-order" href="#">Оформити замовлення</a>
+                        <label class="close" for="cart-radio"><img src="images/close.svg" alt="" title="Закрити"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <div class="container">
+            <div class="filter">
+                <h2>Показати:</h2>
+                <ul>
+                    <li><input type="checkbox" id="phone" class="filter-input" checked><label for="phone"><span></span>Телефони</label></li>
+                    <li><input type="checkbox" id="tablet" class="filter-input" checked><label for="tablet"><span></span>Планшети</label></li>
+                    <li><input type="checkbox" id="computer" class="filter-input" checked><label for="computer"><span></span>Комп'ютери</label></li>
+                    <li><input type="checkbox" id="headphone" class="filter-input" checked><label for="headphone"><span></span>Навушники</label></li>
+                    <li><input type="checkbox" id="accessorie" class="filter-input" checked><label for="accessorie"><span></span>Аксесуари</label></li>
+                </ul>
+            </div>
+            <div class="products">
+                <div class="product-card" data-type="phone">
+                    <a href="products/Смартфон Apple iPhone 15 Plus 128GB Green/product.html" class="img"><img src="products/Смартфон Apple iPhone 15 Plus 128GB Green/logo.png" alt=""></a> 
+                    <a href="products/Смартфон Apple iPhone 15 Plus 128GB Green/product.html" class="title">Смартфон Apple iPhone 15 Plus 128GB Green</a>
+                    <span class="price">41 999 грн</span>
+                    <button data-title="Смартфон Apple iPhone 15 Plus 128GB Green" data-price="41 999 грн" class="add-to-cart">Купити</button>
+                </div>
+                
+                <div class="product-card" data-type="phone">
+                    <a href="products/Смартфон Apple iPhone 11 128GB White/product.html" class="img"><img src="products/Смартфон Apple iPhone 11 128GB White/logo.png" alt=""></a>
+                    <a href="products/Смартфон Apple iPhone 11 128GB White/product.html" class="title">Смартфон Apple iPhone 11 128GB White</a>
+                    <span class="price">23 999 грн</span>
+                    <button data-title="Смартфон Apple iPhone 11 128GB White" data-price="23 999 грн"
+                        class="add-to-cart">Купити</button>
+                </div>
+
+                <div class="product-card" data-type="phone">
+                    <a href="products/Смартфон Apple iPhone 15 Pro Max 256GB Blue Titanium/product.html" class="img"><img src="products/Смартфон Apple iPhone 15 Pro Max 256GB Blue Titanium/logo.png" alt=""></a>
+                    <a href="products/Смартфон Apple iPhone 15 Pro Max 256GB Blue Titanium/product.html" class="title">Смартфон Apple iPhone 15 Pro Max 256GB Blue Titanium</a>
+                    <span class="price">60 499 грн</span>
+                    <button data-title="Смартфон Apple iPhone 15 Pro Max 256GB Blue Titanium" data-price="60 499 грн"
+                        class="add-to-cart">Купити</button>
+                </div>
+
+                <div class="product-card" data-type="phone">
+                    <a href="products/Смартфон Apple iPhone 15 Pro 128GB Natural Titanium/product.html" class="img"><img src="products/Смартфон Apple iPhone 15 Pro 128GB Natural Titanium/logo.png" alt=""></a>
+                    <a href="products/Смартфон Apple iPhone 15 Pro 128GB Natural Titanium/product.html" class="title">Смартфон Apple iPhone 15 Pro 128GB Natural Titanium</a>
+                    <span class="price">50 499 грн</span>
+                    <button data-title="Смартфон Apple iPhone 15 Pro 128GB Natural Titanium" data-price="50 499 грн"
+                        class="add-to-cart">Купити</button>
+                </div>
+                
+                <div class="product-card" data-type="accessorie">
+                    <a href="products/Смарт годинник Apple Watch S9 41mm Midnight Alum Case/product.html" class="img"><img src="products/Смарт годинник Apple Watch S9 41mm Midnight Alum Case/logo.png" alt=""></a>
+                    <a href="products/Смарт годинник Apple Watch S9 41mm Midnight Alum Case/product.html" class="title">Смарт годинник Apple Watch S9 41mm Midnight Alum Case</a>
+                    <span class="price">18 299 грн</span>
+                    <button data-title="Смарт годинник Apple Watch S9 41mm Midnight Alum Case" data-price="18 299 грн"
+                        class="add-to-cart">Купити</button>
+                </div>
+
+                <div class="product-card" data-type="accessorie">
+                    <a href="products/Смарт годинник Apple Watch S9 41mm Pink Alum Case/product.html" class="img"><img src="products/Смарт годинник Apple Watch S9 41mm Pink Alum Case/logo.png" alt=""></a>
+                    <a href="products/Смарт годинник Apple Watch S9 41mm Pink Alum Case/product.html" class="title">Смарт годинник Apple Watch S9 41mm Pink Alum Case</a>
+                    <span class="price">17 499 грн</span>
+                    <button data-title="Смарт годинник Apple Watch S9 41mm Pink Alum Case" data-price="17 499 грн"
+                        class="add-to-cart">Купити</button>
+                </div>
+
+                <div class="product-card" data-type="accessorie">
+                    <a href="products/Смарт годинник Apple Watch S9 41mm Starlight Alum Case/product.html" class="img"><img src="products/Смарт годинник Apple Watch S9 41mm Starlight Alum Case/logo.png" alt=""></a>
+                    <a href="products/Смарт годинник Apple Watch S9 41mm Starlight Alum Case/product.html" class="title">Смарт годинник Apple Watch S9 41mm Starlight Alum Case</a>
+                    <span class="price">19 999 грн</span>
+                    <button data-title="Смарт годинник Apple Watch S9 41mm Starlight Alum Case" data-price="19 999 грн"
+                        class="add-to-cart">Купити</button>
+                </div>
+                <div class="product-card" data-type="accessorie">
+                    <a href="products/Смарт годинник Apple Watch SE 40mm Midnight Alum Case/product.html" class="img"><img src="products/Смарт годинник Apple Watch SE 40mm Midnight Alum Case/logo.png" alt=""></a>
+                    <a href="products/Смарт годинник Apple Watch SE 40mm Midnight Alum Case/product.html" class="title">Смарт годинник Apple Watch SE 40mm Midnight Alum Case</a>
+                    <span class="price">10 599 грн</span>
+                    <button data-title="Смарт годинник Apple Watch SE 40mm Midnight Alum Case" data-price="10 599 грн"
+                        class="add-to-cart">Купити</button>
+                </div>
+                <div class="product-card" data-type="phone">
+                    <a href="products/Смартфон Apple iPhone 13 128GB Pink/product.html" class="img"><img src="products/Смартфон Apple iPhone 13 128GB Pink/logo.png" alt=""></a>
+                    <a href="products/Смартфон Apple iPhone 13 128GB Pink/product.html" class="title">Смартфон Apple iPhone 13 128GB Pink</a>
+                    <span class="price">26 999 грн</span>
+                    <button data-title="Смартфон Apple iPhone 13 128GB Pink" data-price="26 999 грн"
+                        class="add-to-cart">Купити</button>
+                </div>
+                <div class="product-card" data-type="computer">
+                    <a href="products/Apple MacBook Air 13, 256 SSD/product.html" class="img"><img src="products/Apple MacBook Air 13, 256 SSD/logo.png" alt=""></a>
+                    <a href="products/Apple MacBook Air 13, 256 SSD/product.html" class="title">Apple MacBook Air 13, 256 SSD</a>
+                    <span class="price">10 800 грн</span>
+                    <button data-title="Apple MacBook Air 13, 256 SSD" data-price="10 800 грн" class="add-to-cart">Купити</button>
+                </div>
+                <div class="product-card" data-type="computer">
+                    <a href="products/Apple MacBook Air 13.6, 256 SSD/product.html" class="img"><img src="products/Apple MacBook Air 13.6, 256 SSD/logo.png" alt=""></a>
+                    <a href="products/Apple MacBook Air 13.6, 256 SSD/product.html" class="title">Apple MacBook Air 13.6, 256 SSD</a>
+                    <span class="price">11 400 грн</span>
+                    <button data-title="Apple MacBook Air 13.6, 256 SSD" data-price="11 400 грн" class="add-to-cart">Купити</button>
+                </div>
+                <div class="product-card" data-type="tablet">
+                    <a href="products/Планшет Apple iPad Pro M2 Wi-Fi 128GB Silver/product.html" class="img"><img src="products/Планшет Apple iPad Pro M2 Wi-Fi 128GB Silver/logo.png" alt=""></a>
+                    <a href="products/Планшет Apple iPad Pro M2 Wi-Fi 128GB Silver/product.html" class="title">Планшет Apple iPad Pro M2 Wi-Fi 128GB Silver</a>
+                    <span class="price">55 999 грн</span>
+                    <button data-title="Планшет Apple iPad Pro M2 Wi-Fi 128GB Silver" data-price="55 999 грн" class="add-to-cart">Купити</button>
+                </div>
+                <div class="product-card" data-type="tablet">
+                    <a href="products/Планшет Apple iPad 2022 Wi-Fi 64GB Yellow/product.html" class="img"><img src="products/Планшет Apple iPad 2022 Wi-Fi 64GB Yellow/logo.png" alt=""></a>
+                    <a href="products/Планшет Apple iPad 2022 Wi-Fi 64GB Yellow/product.html" class="title">Планшет Apple iPad 2022 Wi-Fi 64GB Yellow</a>
+                    <span class="price">19 499 грн</span>
+                    <button data-title="Планшет Apple iPad 2022 Wi-Fi 64GB Yellow" data-price="19 499 грн" class="add-to-cart">Купити</button>
+                </div>
+                <div class="product-card" data-type="headphone">
+                    <a href="products/Навушники Apple AirPods Pro/product.html" class="img"><img src="products/Навушники Apple AirPods Pro/logo.png" alt=""></a>
+                    <a href="products/Навушники Apple AirPods Pro/product.html" class="title">Навушники Apple AirPods Pro</a>
+                    <span class="price">11 499 грн</span>
+                    <button data-title="Навушники Apple AirPods Pro" data-price="11 499 грн" class="add-to-cart">Купити</button>
+                </div>
+                <div class="product-card" data-type="headphone">
+                    <a href="products/Навушники Apple iPhone EarPods/product.html" class="img"><img src="products/Навушники Apple iPhone EarPods/logo.png" alt=""></a>
+                    <a href="products/Навушники Apple iPhone EarPods/product.html" class="title">Навушники Apple iPhone EarPods</a>
+                    <span class="price">999 грн</span>
+                    <button data-title="Навушники Apple iPhone EarPods" data-price="999 грн" class="add-to-cart">Купити</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Apple Store</p>
+    </footer>
+    <script src="scripts/main.js" ></script>
+</body>
+</html>
